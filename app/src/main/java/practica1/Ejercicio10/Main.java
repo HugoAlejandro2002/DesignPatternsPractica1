@@ -2,7 +2,7 @@ package practica1.Ejercicio10;
 
 public class Main {
 	public static void main(String[] args) {
-		CabinaControl cabinaControl = CabinaControl.getInstance();
+		Cabina cabinaControl = Cabina.getInstance();
 		cabinaControl.showInfo();
 
 		Vehiculo vehiculos[] = { new Vehiculo("Peta", "2134369", "12222093", false),

@@ -3,20 +3,20 @@ package practica1.Ejercicio10;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CabinaControl {
-	private static CabinaControl cabinaControl;
+public class Cabina {
+	private static Cabina cabinaControl;
 	private List<Vehiculo> vehiculosTemp;
 	private List<Vehiculo> vehiculosGlobal;
 	private double dineroRecaudado;
 
-	private CabinaControl() {
+	private Cabina() {
 		this.vehiculosTemp = new ArrayList<>();
 		this.vehiculosGlobal = new ArrayList<>();
 	}
 
-	public static CabinaControl getInstance() {
+	public static Cabina getInstance() {
 		if (cabinaControl == null) {
-			cabinaControl = new CabinaControl();
+			cabinaControl = new Cabina();
 		}
 		return cabinaControl;
 	}
